@@ -1,6 +1,6 @@
 ///<reference types="cypress" />
-describe("tests HW12 suite", () => {
-  it("loginFormSignIn", () => {
+describe("Dialog page", () => {
+  it("Login Form SignIn", () => {
     cy.visit("pages/forms/layouts");
     cy.get("#inputEmail3").clear().type("test@email.com");
     cy.get("#inputPassword3").clear().type("1234567");

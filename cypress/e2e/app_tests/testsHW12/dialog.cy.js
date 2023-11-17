@@ -1,6 +1,6 @@
 ///<reference types="cypress" />
-describe("tests HW12 suite", () => {
-  it("clickSelectButton", () => {
+describe("Dialog page", () => {
+  it("Verify dialog form", () => {
     cy.visit("pages/modal-overlays/dialog");
     cy.get("[data-test='Enter Name']").click();
     cy.get("nb-dialog-container").should("be.visible");
