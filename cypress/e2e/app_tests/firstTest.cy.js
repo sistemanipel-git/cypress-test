@@ -3,7 +3,7 @@
 describe("First test suite", () => {
   context("First test suite - context", () => {
     it("First test suite", () => {
-      cy.visit("");
+      cy.visit("pages");
     });
   });
   describe("Second describe inside", () => {});
