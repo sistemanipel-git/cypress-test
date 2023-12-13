@@ -1,8 +1,8 @@
-import LoginPage from "../pages/loginPage";
+import { LoginClass } from "../pages/loginPage";
 
-const loginPage = new LoginPage();
+const loginPage = new LoginClass();
 
 export function performLogin(username, password) {
   loginPage.getEmailInput().clear().type(username);
-  loginPage.passwordInput().clear().type(password);
+  loginPage.getPasswordInput().clear().type(password);
 }

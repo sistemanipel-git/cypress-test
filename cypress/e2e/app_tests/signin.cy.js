@@ -9,12 +9,12 @@
 //     });
 //   });
 
-import { navigateTo } from "../modules/navigation.js";
-import { performLogin } from "../modules/login.js";
+import { navigateTo } from "../../modules/navigation.js";
+import { performLogin } from "../../modules/login.js";
 
 describe("Dialog page", () => {
   it("Login Form SignIn", () => {
-    navigateTo("pages/forms/loyouts");
+    navigateTo("pages/forms/layouts");
     performLogin("test@gmail.com", "1234567");
   });
 });
