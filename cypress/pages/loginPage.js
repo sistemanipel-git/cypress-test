@@ -11,4 +11,9 @@ export class LoginClass {
   getCheckBoxChecked() {
     return cy.get("span[class='custom-checkbox checked']");
   }
+  getSignInButton() {
+    return cy.get(
+      ".appearance-filled.size-medium.status-warning.shape-rectangle.transitions",
+    );
+  }
 }

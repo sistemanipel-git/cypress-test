@@ -7,4 +7,5 @@ export function performLogin(username, password) {
   loginPage.getPasswordInput().clear().type(password);
   loginPage.getCheckBox().eq(2).click();
   loginPage.getCheckBoxChecked();
+  loginPage.getSignInButton().click();
 }
